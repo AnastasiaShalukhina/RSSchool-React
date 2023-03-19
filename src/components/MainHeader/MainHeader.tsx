@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './mainHeader.module.scss';
 
@@ -10,8 +11,8 @@ function MainHeader() {
     <>
       <header className={headerClass}>
         <div className={headerWrapperClass}>
-          <a href="/">Home</a>
-          <a href="/about">About us</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About us</Link>
         </div>
       </header>
     </>
